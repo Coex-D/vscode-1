@@ -197,7 +197,7 @@ export class BrowserLifecycleService extends AbstractLifecycleService {
 		// currently can only reload the window
 		// Docs: https://web.dev/bfcache/#optimize-your-pages-for-bfcache
 		// Refs: https://github.com/microsoft/vscode/issues/136035
-		this.withExpectedShutdown({ disableShutdownHandling: true }, () => window.location.reload());
+		this.withExpectedShutdown({ disableShutdownHandling: true }, () => console.log('reload'));
 	}
 }
 

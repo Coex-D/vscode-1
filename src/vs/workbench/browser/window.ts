@@ -108,7 +108,7 @@ export class BrowserWindow extends Disposable {
 				buttons: [
 					{
 						label: localize({ key: 'reload', comment: ['&& denotes a mnemonic'] }, "&&Reload"),
-						run: () => window.location.reload() // do not use any services at this point since they are likely not functional at this point
+						run: () => console.log('reload') // do not use any services at this point since they are likely not functional at this point
 					}
 				]
 			});
