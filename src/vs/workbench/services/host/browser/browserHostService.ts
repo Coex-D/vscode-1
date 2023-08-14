@@ -512,7 +512,7 @@ export class BrowserHostService extends Disposable implements IHostService {
 	async reload(): Promise<void> {
 		await this.handleExpectedShutdown(ShutdownReason.RELOAD);
 
-		window.location.reload();
+		console.log('reload');
 	}
 
 	async close(): Promise<void> {

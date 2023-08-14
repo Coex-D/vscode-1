@@ -246,7 +246,7 @@ function makeLoaderJsHotReloadable(loaderJsCode: string, fileChangesUrl: URL): s
 		if (globalThis.$sendMessageToParent) {
 			reloadFn = () => globalThis.$sendMessageToParent({ kind: 'reload' });
 		} else if (typeof window !== 'undefined') {
-			reloadFn = () => window.location.reload();
+			reloadFn = () => console.log('reload');
 		} else {
 			reloadFn = () => { };
 		}
